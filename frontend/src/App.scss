@@ -1,0 +1,114 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section.landingpage {
+  // background-image: url('rochen.jpg');
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-attachment: fixed;
+  // background-position: center;
+  // height: 100vh;
+  div.content {
+    h1 {
+      font-size: 30px;
+      padding: 70px;
+      text-align: center;
+    }
+
+    section.form {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center;
+      margin-bottom: 100px;
+
+      form {
+        width: 400px;
+
+        div.error-message {
+          background-color: deeppink;
+        }
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+
+        input {
+          display: block;
+          padding: 2px;
+        }
+      }
+
+      input#button {
+        padding: 2px 8px;
+      }
+    }
+
+    section.list {
+      margin: 100px auto;
+      display: grid;
+      gap: 80px;
+      grid-template-columns: 60vw;
+      justify-content: center;
+
+      article.entry {
+        div.container {
+          display: flex;
+          flex-direction: column;
+
+          div.user {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+
+            p.name {
+              font-size: 20px;
+              font-weight: 700;
+            }
+
+            p.email {
+              color: aquamarine;
+              font-weight: 600;
+              text-decoration: underline;
+            }
+          }
+
+          div.text {
+            padding: 5px 0 15px 0;
+
+            p {
+              color: lavender;
+              font-size: 14px;
+
+              span {
+                color: hotpink;
+              }
+            }
+          }
+
+          div.message {
+            background-color: darkcyan;
+          }
+        }
+      }
+    }
+  }
+}
